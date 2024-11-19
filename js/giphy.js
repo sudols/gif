@@ -51,35 +51,4 @@ export default class Giphy {
       console.log(error);
     }
   }
-
-  async postUploadGif(blob) {
-    try {
-      let data = new FormData();
-      data.append('file', blob, 'migif.gif');
-      let api = await fetch(
-        'https://upload.giphy.com/v1/gifs?api_key=' + this.apiKey,
-        {
-          method: 'POST',
-          body: data,
-        }
-      );
-      let res = await api.json();
-      return res;
-    } catch (error) {
-      console.log(error);
-      return error;
-    }
-  }
-
-  async getUploadGif(gitId) {
-    try {
-      let gifUploaded = await fetch(
-        'https://api.giphy.com/v1/gifs/' + gitId + '?api_key=' + this.apiKey
-      );
-      let gif = await gifUploaded.json();
-      return gif;
-    } catch (error) {
-      console.log(error);
-    }
-  }
 }
