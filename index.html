@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gifs</title>
+
+    <link id="styles" rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Top Bar-->
+    <div class="navbar">
+      <nav>
+        <p>Lots and lots of gifs! //////////</p>
+      </nav>
+    </div>
+
+    <!--Container-->
+    <div class="container">
+      <!--Toolbar-->
+      <div class="section-logo">
+        <div class="logo" id="logo"></div>
+        <!-- <div class="buttons"> -->
+        <!-- upload is disabled -->
+        <!-- <button id="btnCreateGuifos">Create Guifos</button> -->
+
+        <!-- theme changer is disabled -->
+        <!-- <button id="btnChangeTopic">
+            Choose Theme<i class="fa fa-caret-down"></i>
+          </button> -->
+        <!-- <div
+            class="contenttheme"
+            id="contenttheme"
+            style="visibility: hidden"
+          ></div> -->
+        <!-- <a id="guifos">My Guifos</a> -->
+        <!-- </div> -->
+      </div>
+      <div class="start" id="start">
+        <!--Search-->
+        <div class="lookFor">
+          <label class="lbl ml-1">Look for</label>
+          <div class="formlookFor">
+            <input
+              type="text"
+              id="txtlookFor"
+              placeholder="Search for gifs, hashtags, topics, search for whatever you want..."
+            />
+            <button id="btnlookFor" disabled>
+              <div class="lupa"></div>
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="filter_lookFor" id="filter"></div>
+
+        <!--Suggested Results-->
+        <div id="cardSearch" class="cardsSearch"></div>
+        <div class="trends">
+          <input type="text" id="txtSearch" disabled placeholder="Results:" />
+        </div>
+        <div id="searchResult" class="contentResult"></div>
+
+        <!--Suggested-->
+        <div class="suggested">
+          <input type="text" disabled placeholder="Today's suggestion" />
+        </div>
+        <div class="results" id="results"></div>
+
+        <!--Trends-->
+        <div class="trends">
+          <input type="text" id="trends" disabled placeholder="Trends:" />
+        </div>
+
+        <!--Trends Results-->
+        <div id="resultTend" class="contentResult">
+          <!-- search results images are loaded here -->
+        </div>
+      </div>
+
+      <!-- Created Guifos
+      <div class="myGuifo" id="myGuifo">
+        <input
+          type="text"
+          id="txtGuifosIndex"
+          disabled
+          placeholder="My guifs"
+        />
+        <div id="guifosStorage" class="contentResult"></div>
+      </div> -->
+    </div>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/giphy.js"></script>
+  </body>
+</html>
