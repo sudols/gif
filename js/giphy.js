@@ -13,7 +13,7 @@ export default class Giphy {
           this.apiKey +
           '&q=' +
           this.search +
-          '&limit=2&offset=0&rating=R&lang=en'
+          '&limit=16&offset=0&rating=R&lang=en'
         // '&limit=12&offset=0&rating=R&lang=en'
       );
       let found = await api.json();
@@ -28,7 +28,7 @@ export default class Giphy {
       let api = await fetch(
         'https://api.giphy.com/v1/gifs/trending?api_key=' +
           this.apiKey +
-          '&limit=2&rating=R'
+          '&limit=24&rating=R'
         // '&limit=24&rating=R'
       );
       let found = await api.json();
